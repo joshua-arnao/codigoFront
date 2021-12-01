@@ -7,3 +7,6 @@ Soy fan de Apple
 
 
 Por navidad me gusta comer pavo y tomar coca cola.
+
+
+Esto lo estoy haciendo en mi rama de joshua_dev y quiero que los cambios se junten con main
