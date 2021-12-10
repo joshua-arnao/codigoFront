@@ -1,0 +1,117 @@
+/* Los selectores globales serás los que son llamaados por su etiiqueta */
+/* Los valores por herencia al definir estilos en el padre, todos los hijos que no tengan estilos hereden los estilos del padre*/
+/* La propiedad inherit adquirira el estilo del padre mas cercano */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Sección cabecera */
+.header{
+    background: red;
+    padding: 20px;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* las calses se usan para diferenciar un selector de otro */
+.header .logo{
+    color: white;
+    font-size: 30px;
+}
+
+.header ul{
+    display: flex;
+}
+
+header li{
+    margin-left: 40px;
+}
+
+/* sección cuerpo */
+.main{
+    color: black;
+    display:  flex;
+}
+
+.main aside{
+    background: #15D604;
+    padding: 20px;
+    color: #fff;
+}
+
+.main aside li{
+    margin-bottom: 16px;
+}
+
+.main .main-section{
+    padding: 20px;
+}
+
+.main-section h2{
+    margin-bottom: 20px;
+}
+
+.main p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.articles{
+    display: flex;
+}
+
+.articles article{
+    border: 3px solid black;
+    margin-right: 16px;
+}
+
+.card{
+    padding: 8px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    margin-bottom: 8px;
+}
+
+/* Sección Pie de página */
+.footer{
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer p{
+    color: white;
+}
+
+/* **STICKY FOOTER */
+.wrap{
+    /* para que ocupe todo el alto se usa el "vh" */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap .main{
+    flex-wrap: 1;
+}

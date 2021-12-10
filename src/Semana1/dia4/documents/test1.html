@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        </hr><h1>EJEMPLO 1</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">Los campos marcados con (*) son obligatorios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right">Asunto :</td>
+                    <td><input type="text" name="field_subject"></td>
+                </tr>
+                <tr>
+                    <td align="right">* Primer Apellido :</td>
+                    <td><input type="text" name="field_lastname" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Segundo Nombre :</td>
+                    <td><input type="text" name="field_surname"></td>
+                </tr>
+                <tr>
+                    <td align="right">* Nombre :</td>
+                    <td><input type="text" name="field_name" required></td>
+                </tr>
+                <tr>
+                    <td align="right">D.N.I / Pasaporte / N.I.E :</td>
+                    <td><input type="text" name="field_idcard"></td>
+                </tr>
+                <tr>
+                    <td align="right">* Correo electrónico</td>
+                    <td><input type="email" name="field_mail" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Télefono :</td>
+                    <td><input type="number" name="field_phone"></td>
+                </tr>
+                <tr>
+                    <td align="right">¿Sobre qué? :</td>
+                    <td><select name="field_about" id="">
+                        <option value="" selected disabled></option>
+                        <option value="" >Opción 1</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right">¿Qué va a escribir? :</td>
+                    <td><select name="field_select" id="">
+                        <option value="" selected disabled></option>
+                        <option value="">Opción 1</option>
+                        <option value="">Opción 2</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right">* Texto del escrito :</td>
+                    <td><textarea name="field_text" id="" cols="30" rows="5" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" name="field_write"><strong>Los datos personales facilitados sosusceptibles de cesión cuando ésta sea</strong> </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">
+                        <button>Envíar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

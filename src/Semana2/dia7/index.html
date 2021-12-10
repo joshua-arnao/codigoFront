@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores </title>
+</head>
+<style>
+    *::selection{
+        color: turquoise;
+    }
+    /* <!-- SELECTORES SIMPLES --> */
+    body{
+        background: red;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background: orange;
+    }
+
+    ul a{
+        color: white;
+    }
+
+    /* SELECTORES POR ATRIBUTO */
+    input[type="text"]{
+        padding: 20px;
+    }
+
+    input[disabled]{
+        background: gray;
+    }
+
+    a[href="#"]{
+        background-color: violet;
+        color: orange;
+    }
+
+    a[href="#*"]{
+        color: white;
+        background: yellow;
+    }
+
+    /* PSEUDO - CLASES */
+    .box:hover{
+        background: blueviolet;
+    }
+
+    ul li:hover{
+        font-size: 40px;
+    }
+
+    input:focus{
+        outline: none;
+        box-shadow: 0 0 10px blue;
+    }
+
+     /* PSEUDO CLASES POR POSICIONES */
+    .one li:first-child a{
+        color: brown;
+    }
+
+    .one li:last-child a{
+        color: brown;
+    }
+
+    .one li:nth-child(2) a{
+        color: burlywood;
+        
+    }
+
+    .one li:nth-child(odd){
+        background: lightpink;
+    }
+
+    .one li:nth-child(even){
+        background-color: greenyellow;
+    }
+
+    .two li:nth-child(2n+1){
+        background-color: hotpink;
+    }
+
+    .two li:nth-child(2n+2){
+        background-color: indianred;
+    }
+
+    /* PSEUDO ELEMENTOS */
+    /* h2::before{
+        content: "''";
+    }
+
+    h2::after{
+        content: "''";
+    } */
+
+    h2::first-letter{
+        font-size: 40px;
+    }
+
+    p::first-line{
+        background: white;
+    }
+   
+    ul>li {
+            border-top: 5px solid blue;
+        }
+        
+</style>
+<body>
+    <div class="box"></div>
+    <ul class="one">
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+    </ul>
+
+    <ul class="two">
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+    </ul>
+    <input type="text">
+    <input type="checkbox">
+    <input type="password">
+    <input type="text" disabled>
+    <a href="#">LINKEDIN</a>
+    <a href="#*">GOOGLE</a>
+
+    <h2>TITULO DE LA PÁGINA HOLA MUNDO</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, cupiditate. Nostrum odit voluptatibus unde laborum excepturi eligendi quod maxime officia esse expedita quas, quaerat fugit asperiores rem, rerum voluptatem nobis!</p>
+
+        <ul>
+            <li>Unordered item</li>
+            <li>Unordered item
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </li>
+        </ul>
+    
+</body>
+</html>

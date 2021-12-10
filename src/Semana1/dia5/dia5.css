@@ -1,0 +1,101 @@
+/* **CSS */
+/* Es un motor de estilos muy potente */
+/* padding: es el espacio interno de un elemento */
+/* margin: es un espacio externo de un elemento */
+
+
+/* Se recomienda solo manejar el margin, paddin and border-box */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* El atributo "font-family: ;" permite cambiar el tipo de letra */
+    /* Se pueden anidar tipos de letras para que en el caso de que un tipo de letra no este instalado se use otra alternativa*/
+    font-family: "Helvetica", arial;
+}
+
+nav{
+    text-align: right;
+}
+
+/* Elementos del Body */
+h1{
+    /* Color de los textos */
+    color: red;
+    /* El atributo "background-color" se usa para colocar un fondo en el elemento */
+    background-color: black;
+    /* la propiedad font-weigth le da un peso a las letras en el rango de 100 a 900 */
+    /* Y también para darle la propiedad de bold(negrita) */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Para llamar un id en ccs se utiliza # y el nombre */
+#title_1{
+ color: aquamarine;
+}
+
+section{
+    background-color: yellow;
+    /* la propiedad border es para colocar un borde de un elmento */
+    border: solid red 3px;
+}
+
+
+/* Para acceder a un elemento hijo accedemos a un elemento en casacado seleccionando etiqueta padres y luego la etiqueta hijo */
+article p{
+    /* "text-algn" permite alinear un texto (center, justify, left, right */
+    text-align: center;
+    /* La propiedad "font-size es para darle tamaño al texto" */
+    font-size: 14px;
+}
+
+#text__introduction{
+    text-align: justify;
+}
+
+
+li{
+    color: green;
+}
+
+ul{
+    background-color: lightgray;
+}
+
+ul li{
+    /* quita las viñetas a las "li" */
+    list-style: none;
+    /* "display" es la propiedad que permite mostrar un elemento */
+    display: inline;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* los id deben ser unicos es decir solo afecta a un elemento */
+/* Para poder repetir identificadores en los elementos se deben usar "class" */
+/* Para llamar una clase en css usamos "." y el nombre de la clase */
+/* Usando class podemos reutilziar c+odigo CSS, solo usar cuando es neceasrio */
+.text__page{
+    color: chocolate;
+}
+
+#logo{
+    width: 50%;
+    border: 4px solid rgb(56, 255, 255);
+}
+
+body{
+    text-align: center;
+    background-color: lightseagreen;
+}

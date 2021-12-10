@@ -1,0 +1,188 @@
+/* Estilos Globales */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 0;
+}
+
+a{  
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    padding-top: 33px;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-bottom: 16px;
+}   
+
+.home h2{
+    color: #3B06D2;
+}
+
+.servicios h2{
+    color: #D206B2;    
+}
+
+.portafolio h2{
+    color:#AAD206;
+}
+
+.contact h2{
+    color: #06D2C6;
+}
+
+p{
+    font-weight: lighter;
+    padding-bottom: 16px;
+}
+
+/* Sección Cabecera */
+header{
+    background: #00AF1C;
+    padding: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    font-size: 32px;
+    
+}
+
+.header ul{
+    display: flex;
+}
+
+.header li{
+    font-size: 16px;
+    margin-left: 40px;
+
+}
+
+.header > nav{
+    margin-right: 26px;
+}
+
+/* Sección main */
+.wrap{
+    margin: 33px;
+}
+
+.figure{
+    display: flex;
+    width: 100%;
+}
+
+.figure img{
+    width: 100%;
+}
+
+figure{
+    margin-right: 30px;
+    margin-top: 16px;
+}
+
+.list-one{
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: inherit;
+}
+
+.list-one li{
+    margin: 16px;
+    list-style-type: inherit;
+}
+
+.list-one li:nth-child(1){
+    color: #FF0000;
+}
+
+.list-one li:nth-child(2){
+    color: #1400FF;
+}
+
+.list-one li:nth-child(3){
+    color: #D79B00;
+}
+
+.list-one li:nth-child(4){
+    color: #03B2B2;
+}
+
+.list-two{
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: inherit;
+}
+
+.list-two li{
+    margin: 16px;
+    list-style-type: inherit;
+}
+
+.list-two li{
+    margin: 16px;
+    list-style-type: inherit;
+}
+
+.list-two li:nth-child(1){
+    color: #AE8800;
+}
+
+.list-two li:nth-child(2){
+    color: #AE280B;
+}
+
+.list-two li:nth-child(3){
+    color: #060564;
+}
+
+.list-two li:nth-child(4){
+    color: #637300;
+}
+
+input{
+    width: 100%;
+    height: 80px;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+
+textarea{
+    width: 100%;
+    height: 214px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    margin-top: 36px;
+    height: 73px;
+    width: 195px;
+    background-color: white;
+    border: 1px solid #00AF1C;
+    color: #00AF1C;
+}
+
+input::placeholder{
+text-indent: 24px;
+}
+
+textarea::placeholder{
+    text-indent: 24px;
+    padding-top: 20px;
+}
+
+/* Sección Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #00AF1C;
+    padding: 33px;
+    color: white;
+    font-size: 24px;
+}

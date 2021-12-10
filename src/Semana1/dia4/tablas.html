@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 4 - Tablas</title>
+</head>
+<body>
+    <!-- Etiquetas de tablas -->
+    <!-- Contenedor de filas y columnas -->
+    <table border="1">
+        <!-- Una tabla esta compuesto porr una cabecera y cuerpo -->
+        <!-- El atributo "thead" es la cabecera de la tabla -->
+        <thead>
+            <!-- para definir los elementos de la cabecera tienen que estar dentro de una fila(row) la etiqueta seria "tr" -->
+            <tr>
+                <!-- para un elemento de la cabecera usamos la etiqueta "th" -->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>Fecha de Nacimiento</th>
+            </tr>
+        </thead>
+        <!-- Para el cuerpo de una tabla se usa la etiqueta "tbody" -->
+        <tbody>
+            <tr>
+                <!-- Para los elementos dentro de una tabla se usa la etiqueta "td" -->
+                <td>Joshua</td>
+                <td>Arnao</td>
+                <td>999999999</td>
+                <td>Joshua@correo.com</td>
+                <td>28/06/1993</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabla de usuarios con imagenes</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Correo</th>
+                <th>Foto</th>
+                <th>GitHub</th>
+                <th>PDF</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!-- la etiquta "strong" se utiliza para cambiar  un texto a negrita -->
+                <td><strong>Juan</strong></td>
+                <!-- La etiqueta "u" es para subrayar un texto -->
+                <td><u>Perez</u></td>
+                <!-- La etiqueta "i hace cursiva un texto" -->
+                <td><i>30 años</i></td>
+                <td>juan@gmail.com</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png" alt="foto usuario" width="100px"></td>
+                <td><a href="https://github.com/">GitHub</a></td>
+                <td><iframe src="./documents/desafio_FullStack.pdf" width="200px"></iframe></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Colspan ocupa diferentes espacios de manera horizontal en una tabla según indiquemos -->
+    <h2>Tabla con Colspan</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Correo</th>
+                <!-- Este th vale para 2 columnas -->
+                <th colspan="3">Foto y numero</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="2"><strong>Juan Perez</strong></td>
+                <td>30 años</td>
+                <td>juan@gmail.com</td>
+                <!-- Estos ultimos campos sera parte de Foto y número porque tienen un colspan de 2 -->
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png" alt="foto usuario" width="100px"></td>
+                <td>9999</td>
+                <td>111</td>
+            </tr>
+        </tbody>
+    </table>
+
+     <!-- Rowspan ocupa diferentes espacios de manera horizontal en una tabla según indiquemos -->
+    <h2>Tabla con Rowspan</h2>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            <th>Edad</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">HTML</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="3">JavaScript</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="3">PHP</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

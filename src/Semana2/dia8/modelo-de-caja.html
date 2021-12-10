@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módelo de caja</title>
+    <style>
+        /* Display */
+        /* display: bloque; // convierte el bloque al elemento */
+        /* display: inline; // convierte inline al elemento*/
+        /* display: none; // Esconde el elemento*/
+        /* visibility: hidden; // Esconde los elementos pero siguen ocupando su espacio */
+        /* display: inline-bloque // Que ocupe el espacio de su contenido */
+        body{
+            margin: 0px;
+        }
+
+        a{
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        HEADER
+    </header> 
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <div>DIV</div>
+    <h1>H1</h1>
+    <span>SPAN</span>
+
+    <style>
+        h2{
+            /* border-style: dotted; // solid dashed double
+            border-width: 6px;
+            border-color: red; */
+            border: 6px dotted red;
+        }
+
+        .padding{
+            background: yellow;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .box-sizing{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            padding: 20px;
+            /* Para el padding no sume a la caja se usa "box-sizing: ;" */
+            box-sizing: border-box;
+        }
+
+        /* overflow: hidden; // Ocula el desbordamiento de un página*/
+    </style>
+    <h2>H2</h2>
+
+    <!-- "margen" control el espaciado de la parte externa del elemento // cuando se encuentrar 2 margenes se sobre ponenen -->
+    <!-- margen:20px 20px 20px 20px// arriba derecha abajo izquierda -->
+    <!-- margin: 20px 20px 20px; // arr iba, (derecha e izuiera) y abajo-->
+    <!-- margin; 20px 20px; // (arriba y abajo) y (derecha izquiera) -->
+
+    <!-- paddin espaciado interno de un elemento-->
+    <div class="padding">
+        PADDING
+    </div>
+    <div class="padding">
+        PADDING
+    </div>
+    <div class="box-sizing">
+        BOX-SIZING
+    </div>
+
+    <!-- background repeat: repeatx; // repeaty none-->
+    <!-- backgroudn position: 10px 10px // top center(por ejes del elemento) --> 
+    <!-- Propiedad "outline" es como un background pero no ocupa espacio -->
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Día 4 - Formularios</title>
+  </head>
+  <body>
+    <!-- Un formulario esta compuesto por inputs, selecets y botones -->
+    <!-- **Se utiliza la etiqueta "form" como padre de los inputs -->
+    <!-- El atributo "action" para enviar información backend -->
+    <!-- El atributo metodo es la manera en la que se envía la información en javascript -->
+    <form action="">
+      <fieldset>
+        <legend>Input de tipo nombre</legend>
+        <!-- Los inputs siempre van dentro de la etiqeuta "form" -->
+        <!-- La etiqueta "input" es una caja de texto, está etiqueta se cierra así mismo -->
+        <p>
+          <label for="field__name">Nombre</label>
+          <!-- El atibuto "type" se usa para indicar de que tipo es el input -->
+          <!-- El atributo "placerholder" es un texto de ayuda -->
+          <input
+            type="text"
+            placeholder="Ingrese su nombre"
+            name="name"
+            id="field__name"
+          />
+        </p>
+        <p>
+          <label for="field__name">Nombre</label>
+          <!-- El atributo "value" es el valor que se le puede dar a un input es decir un texto escrito -->
+          <!-- con los atributos "maxlength" se puede colocar un maximo de atributos y con el atributo "minlength" se puede colocar un mínimo de caracteres en un input de texto -->
+          <input
+            type="text"
+            placeholder="Ingrese su nombre"
+            value="Pepe"
+            id="field_name"
+            maxlength="8"
+            minlength="4"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Input de tipo number</legend>
+        <p>
+          <label for="field__number">Numero</label>
+          <input
+            type="number"
+            name="number"
+            id="field__number"
+            placeholder="Ingrese un número"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Input Color</legend>
+        <label for="field__color">Color</label>
+        <input type="color" name="color" id="field__color">
+      </fieldset>
+      <fieldset>
+        <legend>Input Fecha y hora</legend>
+        <p>
+          <label for="field__date">Fecha</label>
+          <input type="date" name="date" id="field__date" />
+        </p>
+        <p>
+          <label for="field__time">Hora</label>
+          <input type="time" name="time" id="field__time" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Input archivo</legend>
+        <p>
+          <label for="field__file"></label>
+          <input type="file" name="file" id="field__file" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Input Password</legend>
+        <p>
+            <label for="field__pass">Contraseña</label>
+        <input
+          type="password"
+          name="password"
+          id="field__pass"
+          placeholder="Ingresa tu contraseña">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Input email and submit</legend>
+        <p>
+            <!-- Se puede requerir campos para ejecutar una acción -->
+            <label for="field__mail">Correo</label>
+            <input type="email" name="email" id="field_mail" placeholder="Ingrese un correo" required>
+        </p>
+        <p>
+            <label for="field__submit" value="Send__information"></label>
+            <!-- "submit" envia información puede ser un "button" o un "input" -->
+            <input type="submit">
+            <button type="submit">Enviar</button>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Input marcado (check-box y radiobutton)</legend>
+        <p>
+          <!-- El atributo "for" del "label" hace refernencia al atributo "id" de la etiqueta "input" -->
+          <label for="radio__1">
+            <input type="radio" name="opcion__color" id="radio__1">Rojo
+          </label>
+          <!-- Para que el type "radio" funcione es necesario que todos los campos que se creen contengan el mismo nombre en el atributo "name" -->
+          <label for="radio__2">
+            <input type="radio" name="opcion__color" id="radio__2">Blue
+          </label>
+          <label for="radio__3">
+            <input type="radio" name="opcion__color" id="radio__3">Verde
+          </label>
+        </p>
+        <p>
+          <!-- "checkbox" es un tipo de input que permite marcar más de una opción-->
+          <input type="checkbox" name="course" id="maths_course">Matematicas
+          <input type="checkbox" name="course" id="language_course">Lenguaje
+          <input type="checkbox" name="course" id="hmtl_course">HTML
+          <input type="checkbox" name="course" id="javascript_course">JavaScript
+          <input type="checkbox" name="course" id="css_course">CSS
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Selects</legend>
+        <p>
+          <!-- Los selects se componen de dos elemenos el padre que es el "select" ylos "opcion" que contiene  los elementos de los "selects"-->
+          <!-- En las etiquetas "select" siempre deben de tener un atributo "value" ya que esta es la información que se enviara al backend-->
+          <select name="course">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="rjs">React Js</option>
+          </select>
+        </p>
+        <p>
+          <select name="countries">
+            <!-- La etiqueta "option" tiene el atributo "selected" que permite marcar una opción preterminada-->
+            <option value="peru">Perú</option>
+            <option value="chile">Chile</option>
+            <option value="ecuador" selected>Ecuador</option>
+            <option value="colombia">Colombia</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Text area</legend>
+        <p>
+          <!-- el atributo "textarea" es para colocar una caja de texto -->
+          <textarea name="my_self" placeholder="escribe un texto" id="" cols="30" rows="10"></textarea>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <style>
+        .flex{
+            display: flex;
+            background: pink;
+            justify-content: flex-start;
+        }
+
+        .flex div{
+            width: 40px;
+        }
+
+        .flex div:nth-child(even){
+            background: red;
+        }
+
+        .flex div:nth-child(odd){
+            background: green;
+        }
+    </style>
+    <h1>Justify Content</h1>
+    <h2>flex-star</h2>
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <style>
+
+        .flex div{
+            width: 40px;
+        }
+
+        .flex div:nth-child(even){
+            background: red;
+        }
+
+        .flex div:nth-child(odd){
+            background: green;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+    </style>
+    <h2>flex-end</h2>
+    <div class="flex flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <style>
+
+        .flex-center{
+            justify-content: center;
+        }
+    </style>
+    <h2>flex-center</h2>
+    <div class="flex flex-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <style>
+
+        .flex-between{
+            justify-content: space-between;
+        }
+    </style>
+    <h2>space-between</h2>
+    <div class="flex flex-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+    <style>
+
+        .flex-around{
+            justify-content: space-around;
+        }
+    </style>
+    <h2>space-around</h2>
+    <div class="flex flex-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+    
+</body>
+</html>
