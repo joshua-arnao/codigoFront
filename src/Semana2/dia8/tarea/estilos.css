@@ -38,6 +38,9 @@ b{
     align-items: center;
     background: #9ECEFA;
     padding: 24px;
+    position: fixed;
+    z-index: 100%;
+    width: 100%;
 }
 
 .logo{
@@ -68,7 +71,8 @@ b{
 
 /* Sección main */
 .wrap{
-    margin: 36px;
+    margin: 0px 36px 36px 36px;
+    padding-top: 120px;
 }
 
 .section{
