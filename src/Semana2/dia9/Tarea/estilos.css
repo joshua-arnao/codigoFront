@@ -127,14 +127,14 @@ a{
     margin: 20px 0px;
 }
 
-.skills .content article{
+.skills .content > div{
     width: 45%;
     height: 80px;
     display: inline-block;
     text-align: left;
 }
 
-.skills .content article:nth-child(odd){
+.skills .content div:nth-child(odd){
     margin-right: 32px;
 }
 /* Fin sección Skills */
