@@ -1,0 +1,237 @@
+/* Atributos Globales */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  text-align: center;
+}
+
+p {
+    margin: 24px 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Sección main */
+.main {
+  max-width: 900px;
+  width: 900px;
+  height: 100vh;
+  margin: auto;
+}
+
+.banner {
+  height: 1px;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner .float {
+  position: absolute;
+  color: white;
+}
+
+.banner .float:nth-child(1) {
+  z-index: 1;
+  top: 60px;
+  left: 40%;
+}
+
+.banner .float:nth-child(3){
+    top: 242px;
+    left: 8%;
+    width: 361px;
+    background-color: rgba(114, 153, 254, 0.5);
+    padding: 16px;
+    border-radius: 10px;
+}
+/* Fin sencción Banner */
+
+/* Sección sobre mí */
+.my-self{
+    margin-top: 54%;
+    padding: 40px;
+    background-color: #7299fe;
+    color: white;
+}
+
+.my-self h2{
+    color: #1d06a7;
+}
+
+.my-self button{
+    padding: 18px 58px;
+    background-color: #D16FFF;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) 
+}
+
+.my-self button:hover{
+    background-color: #9a31ca;
+    transition: all 0.3s ease-in-out;
+}
+/* Fin Sección sobre mí */
+/* Sección Skills */
+.skills{
+    background: #9022FF;
+    padding: 40px;
+    color: white;
+}
+
+.skills h2{
+    color: #26CC4B;
+}
+
+.background-bar{
+    background-color: white;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.front-bar{
+    background: #57EFF9;
+    width: 35%;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.skills .content{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.skills .content article{
+    width: 45%;
+    height: 80px;
+    display: inline-block;
+    text-align: left;
+}
+
+.skills .content article:nth-child(odd){
+    margin-right: 32px;
+}
+/* Fin sección Skills */
+/* Sección Portafolio */
+.portfolio{
+    background: #FFD233;
+    padding: 40px;
+    color: #00AD84;
+}
+
+/* .portfolio section{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.portfolio figure{
+    display: inline-block;
+    width: 20%;
+    margin: 15px;
+} */
+
+.practica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.practica li{
+    margin: 15px;
+}
+/* Fin Sección Portfolio */
+/* Sección Clientes */
+.coustumers{
+    background: #3F4E62;
+    padding: 40px;
+    color: #ADFF28;
+}
+
+.practica2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.practica2 li{
+    margin: 8px;
+}
+/* Fin Sección Contacto */
+.contact{
+    background: #1687A0;
+    padding: 40px;
+    color: #FF1B1B;
+    text-align: center;
+}
+
+.contact form{
+    width: 90%;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact input{
+    width: 45%;
+    margin: 10px;
+    height: 60px;
+}
+
+.contact input::placeholder{
+    text-indent: 24px;
+}
+
+.contact textarea{
+    margin: 20px 0px 40px;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact textarea::placeholder{
+    text-indent: 24px;
+    padding-top: 20px;
+}
+
+.contact button{
+    padding: 18px 58px;
+    background-color: #233451;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) 
+}
+
+.contact button:hover{
+    background-color: #6899f0;
+    transition: all 0.5s ease-in-out;
+}

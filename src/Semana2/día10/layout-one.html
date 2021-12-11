@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: 0px;
+        }
+
+        body{
+
+        }
+
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper main{
+            flex-grow: 1;
+        }
+
+        main{
+            display: flex;
+        }
+
+        main aside{
+            width: 30%;
+            max-width: 140px;
+            background: green;
+            padding: 20px;
+        }
+        
+        main>section{
+            flex-grow: 1;
+            width: 70%;
+            padding: 20px;
+        }
+
+        /* ARTICLES */
+        .articles{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .articles article{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .articles article:nth-child(odd){
+            padding-right: 20px;
+        }
+
+        .articles article:nth-child(even){
+            padding-left: 10px;
+        }
+
+        .articles article div{
+            border: 1px solid gray;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            Header
+        </header>
+        <main>
+            <aside>ASIDE</aside>
+            <section class="articles">
+                <section>ARTICLE</section>
+                <div>
+                    <figure>
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </figure>
+                    <h2>TITULO</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis recusandae optio blanditiis culpa dolorem similique beatae minus facilis veniam repellendus illum voluptatibus, iste quaerat odio voluptatem a facere quae? Quo.</p>
+                </div>
+                           </section>
+        </main>
+    </div>
+</body>
+</html>
