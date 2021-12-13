@@ -1,0 +1,268 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #262626;
+  font-size: 1.3rem;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0098EF;
+  margin-bottom: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Sección Cabecera */
+.wrap {
+  width: 960px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  margin: 16px;
+}
+
+/* Sección Mí perfíl */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  margin: 72px 10px 36px 10px;
+}
+
+.about {
+  width: 50%;
+}
+
+span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.about h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.about h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #00cf95;
+  line-height: 50px;
+  margin-bottom: 16px;
+}
+
+.about h3 {
+  line-height: 24px;
+  border-left: 4px solid #80e7ca;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.about button {
+  border: none;
+  background: #6d0ad3;
+  color: white;
+  padding: 10px 40px;
+  margin-right: 36px;
+}
+
+button a {
+  color: white;
+}
+
+.about div {
+  display: flex;
+  justify-content: left;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: rown;
+}
+
+.social-media__item {
+  margin: auto;
+  padding-right: 16px;
+}
+
+.profile-likes {
+  padding-top: 24px;
+  text-align: right;
+}
+
+.linkedin-icon i{
+  color: #0176B5;
+}
+
+.whatsapp-icon i{
+  color: #44C24F;
+}
+
+.header a:hover {
+  color: #00cf95;
+}
+
+/* Sección down */
+.down {
+  text-align: center;
+}
+
+.down i{
+  color: #00CF95;
+}
+
+/* Sección Portafolio */
+.portfolio {
+  margin: 10px 10px 80px 10px;
+}
+
+.portfolio > div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image-portfolio {
+  display: grid;
+  flex-wrap: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.image-portfolio article {
+  margin: auto;
+}
+
+.article {
+  position: relative;
+  color: white;
+}
+
+.article h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.article div {
+  position: absolute;
+  background: rgba(109, 10, 211, 0.7);
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.article ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-portfolio img {
+  border: 6px solid #00CF95;
+  border-radius: 8px;
+}
+
+.article li {
+  background: #D1FFA2;
+  color: #6D0AD3;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin: 10px 2px;
+  padding: 4px 8px;
+}
+
+.article li:hover {
+  background: orange;
+  color: white;
+}
+
+/* Sección Servicios */
+.services{
+  background: #00CF95;
+  border: 6px solid #D1FFA2;
+  border-radius: 8px;
+  width: 308px;
+  height: 218px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px 24px 24px;
+  margin: 20px;
+}
+
+.services i{
+  color: white;
+}
+
+.services h3{
+  display: flex;
+  align-items: flex-end;
+  background: #D1FFA2;
+  margin-top: 110px;
+  padding: 8px 42px 8px 42px;
+  align-items: center;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 2.4rem;
+  color: #5A0CB0;
+  font-weight: 600;
+}
+
+.list-services{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services:hover {
+  border: 6px solid #5a0cb0;
+}
+
+.services:hover h3{
+  background: #5A0CB0;
+  color: white;
+}
+
+.services:hover i {
+  color: #580aaf;
+}
