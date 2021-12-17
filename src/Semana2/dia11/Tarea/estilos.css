@@ -274,6 +274,7 @@ button a {
 
 .article:hover div {
   display: block;/* Esto generá el hover */
+  translate: scale(1.0);
 }
 /* Fin sección porfolio */
 
