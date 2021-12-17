@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../../Styles/resect.css" />
-    <script
-      src="https://kit.fontawesome.com/3de167f6ac.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./estilos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Document</title>
-  </head>
-  <body>
-    <main class="wrap">
-      <!-- Sección Cabecera -->
-      <header class="header">
-        <div class="logo">
-          <a href="#"><img src="../../../../img/Group1686.png" alt="" /></a>
-        </div>
-        <ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../../Styles/resect.css" />
+  <script src="https://kit.fontawesome.com/3de167f6ac.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="wrap">
+    <!-- Sección Cabecera -->
+    <header class="header">
+      <div class="logo">
+        <a href="#"><img src="../../../../img/Group1686.png" alt="" /></a>
+      </div>
+      <nav>
+        <ul class="nav-page">
           <li><a href="#">Sobre mi</a></li>
           <li><a href="#">Portafolio</a></li>
           <li><a href="#">Service</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
-      </header>
-      <!-- Sección sobre mí -->
+      </nav>
+    </header>
+    <!-- Sección sobre mí -->
+    <div class="contenedor">
       <section class="about-me">
         <div class="about">
           <span>Hola, Hello</span>
@@ -73,29 +73,18 @@
           <div>
             <span>4.6 mill</span>
             <button class="button-like">
-              <a href="#"><i class="fas fa-check"></i>Me gusta</a> 
+              <a href="#"><i class="fas fa-check"></i>Me gusta</a>
             </button>
           </div>
-          <button><a href="#">Compartir</a></button>
+          <button class="button-twitter"><a href="#">Compartir</a></button>
           <button class="button-twitter">
             <a href="#"><i class="fab fa-twitter"></i>Tweet</a>
           </button>
-          <!-- <figure>
-            <img src="../../../../img/likes.png" alt="likes" />
-          </figure>
-          <figure>
-            <img src="../../../../img/twitter.png" alt="twitter" />
-          </figure> -->
         </div>
       </section>
       <!-- Sección down -->
       <div class="down">
-        <a href="#"
-          ><i
-            class="fas fa-chevron-down fa-4x"
-            style="--fa-primary-color: gold"
-          ></i
-        ></a>
+        <a href="#"><i class="fas fa-chevron-down fa-4x" style="--fa-primary-color: gold"></i></a>
       </div>
       <!-- Sección Portafolio -->
       <section class="portfolio">
@@ -236,69 +225,177 @@
         <h2>SERVICES</h2>
         <div class="list-services">
           <div class="services">
-            <i
-              class="far fa-list-alt fa-3x"
-              style="--fa-secondary-color: white"
-            ></i>
+            <i class="far fa-list-alt fa-3x" style="--fa-secondary-color: white"></i>
             <h3>UX/UI</h3>
           </div>
           <div class="services">
-            <i
-              class="far fa-list-alt fa-3x"
-              style="--fa-secondary-color: white"
-            ></i>
+            <i class="far fa-list-alt fa-3x" style="--fa-secondary-color: white"></i>
             <h3>FRONT END</h3>
           </div>
           <div class="services">
-            <i
-              class="far fa-list-alt fa-3x"
-              style="--fa-secondary-color: white"
-            ></i>
+            <i class="far fa-list-alt fa-3x" style="--fa-secondary-color: white"></i>
             <h3>BACK END</h3>
           </div>
           <div class="services">
-            <i
-              class="far fa-list-alt fa-3x"
-              style="--fa-secondary-color: white"
-            ></i>
+            <i class="far fa-list-alt fa-3x" style="--fa-secondary-color: white"></i>
             <h3>APPS</h3>
           </div>
           <div class="services">
-            <i
-              class="far fa-list-alt fa-3x"
-              style="--fa-secondary-color: white"
-            ></i>
+            <i class="far fa-list-alt fa-3x" style="--fa-secondary-color: white"></i>
             <h3>CONSULTING</h3>
           </div>
           <div class="services">
-            <i
-              class="far fa-list-alt fa-3x"
-              style="--fa-secondary-color: white"
-            ></i>
+            <i class="far fa-list-alt fa-3x" style="--fa-secondary-color: white"></i>
             <h3>CLOUD</h3>
           </div>
         </div>
       </section>
-      <!-- <section class="blog">
+      <!-- Sección Blog -->
+      <section class="blog">
         <h2>BLOG</h2>
         <div class="news-section">
-          <article class="news">
+          <article class="first-new">
             <figure>
-              <img
-                src="https://picsum.photos/seed/picsum/300/200"
-                alt="Noticia 1"
-              />
+              <img src="https://picsum.photos/seed/picsum/300/200" alt="Noticia 1" />
             </figure>
-            <h2>CSS3 ANIMATIONS</h2>
+            <h2>JS El nuevo Rey</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing , consectetur
-              adipisc.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,
+              consectetur adipisc
             </p>
             <a href="#">Leer mas</a>
           </article>
+          <div>
+            <article class="second-new">
+              <div>
+                <h3>CSS3 ANIMATIONS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing , consectetur adipisc
+                </p>
+                <a href="#">Leer mas</a>
+              </div>
+              <figure>
+                <img src="https://picsum.photos/seed/picsum/150/200" alt="">
+              </figure>
+            </article>
+            <article class="second-new">
+              <figure>
+                <img src="https://picsum.photos/seed/picsum/150/200" alt="">
+              </figure>
+              <div>
+                <h3>JS Engine</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing , consectetur adipisc
+                </p>
+                <a href="#">Leer mas</a>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article class="third-new">
+              <div>
+                <h3>CSS3 ANIMATIONS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing , consectetur adipisc
+                </p>
+                <a href="#">Leer mas</a>
+              </div>
+              <figure>
+                <img src="https://picsum.photos/seed/picsum//300/100" alt="">
+              </figure>
+            </article>
+            <div class="suscribe">
+              <p>
+                Nos gusta escribir y compartir sobre tecnologia, diseño, tendencias, y muchas cosas mas. Si te gustaria
+                recibir nuestras pubicaciones subscribete
+              </p>
+              <form action="">
+                <input type="mail" placeholder="E-mail">
+                <button><a href="#">Suscribete</a></button>
+              </form>
+            </div>
+          </div>
         </div>
-      </section> -->
-    </main>
-  </body>
+      </section>
+      <section class="contact">
+        <h2>CONTACT</h2>
+        <form action="">
+          <div class="form-contact">
+            <div>
+              <input type="text" placeholder="Nombre">
+            </div>
+            <div>
+              <input type="phone" placeholder="Teléfono">
+            </div>
+            <div>
+              <select name="project" id="">
+                <option value="">Tipo de proyecto</option>
+                <option value="1">UI/UX</option>
+                <option value="2">UI/UX</option>
+                <option value="3">UI/UX</option>
+                <option value="4">UI/UX</option>
+                <option value="5">UI/UX</option>
+                <option value="6">UI/UX</option>
+              </select>
+            </div>
+            <div>
+              <select name="project" id="">
+                <option value="">Presupuesto</option>
+                <option value="1">Menor de 500</option>
+                <option value="2">Menor de 500</option>
+                <option value="3">Menor de 500</option>
+                <option value="4">Menor de 500</option>
+              </select>
+            </div>
+            <div class="form-textarea">
+              <textarea name="description" id="" cols="30" rows="10" placeholder="Cuéntanos mas"></textarea>
+            </div>
+            <button class="button-form"><a href="#">Enviar</a></button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!-- Sección Footer -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <a href="#"><img src="../../../../img/Group1686.png" alt=""></a>
+      </div>
+      <div class="footer-area">
+        <h2>GRACIAS POR VISITARNOS</h2>
+        <nav>
+          <ul class="nav-page">
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <p>Con <i class="fas fa-heart"></i> desde Lima - Peru</p>
+      </div>
+      <ul class="social-media">
+        <li class="social-media__item linkedin-icon">
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </li>
+        <li class="social-media__item github-icon">
+          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+        </li>
+        <li class="social-media__item github-icon">
+          <a href="#"><i class="fab fa-codepen fa-2x"></i></a>
+        </li>
+        <li class="social-media__item github-icon">
+          <a href="#"><i class="fas fa-envelope fa-2x"></i></a>
+        </li>
+        <li class="social-media__item whatsapp-icon">
+          <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </main> 
+</body>
+
 </html>
