@@ -51,7 +51,8 @@ article p {
 /* Fin sección Global */
 
 /* ** Sección Cabecera */
-.header {
+/* s */
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +64,16 @@ article p {
   justify-content: space-between;
   line-height: 1.6rem;
   width: 380px;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  font-size: 30px;
+  line-height: 60px;
+  padding: 0px 20px;
+  display: none;
+  cursor: pointer;
 }
 /* Fin sencción Cabecera */
 
@@ -511,8 +522,133 @@ button a {
 /* Fin Sección Footer */
 
 /* ** Sección Media */
-@media all and (max-width:600px){
+@media all and (max-width:768px){
+  .logo {
+    padding: 8px;
+  }
+
   .wrap {
     width: 100%;
+    justify-content: center;
+  }
+  
+  .toggle {
+    display: block;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav-page {
+    flex-direction: column;
+    align-items: center;
+    background-color: #80e7ca;
+    position: fixed;
+    left: 0px;
+    top: 79px;
+    padding: 20px 0px;
+   /*  height: calc(100% - 79px);
+    overflow-y: auto; */
+    left: 100%;
+    transition: left 0.2s;
+  }
+
+  .contenedor{
+    padding: 109px 16px 16px 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-page li {
+    padding: 20px;
+  }
+
+  .header a:hover, 
+  .link-active {
+    color: #8b52c4;
+  }  
+
+  .nav-menu_visible {
+    left: 0px;
+  }
+
+  .about-me{
+    overflow: hidden;
+    display: grid;
+    margin: 0px;
+  }
+
+  .aboute {
+    width: 100%;
+  }
+  .about-me figure{
+    display: none;
+  }
+
+  .about-me .profile-likes {
+    display: none;
+  }
+
+  .about div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  .image-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services {
+    width: 100%;
+  }
+
+  .list-services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog {
+    width: 100%;
+  }
+
+  .news-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact .form {
+    display: flex;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer .social-media {
+    display: none;
   }
 }
+
+
+
