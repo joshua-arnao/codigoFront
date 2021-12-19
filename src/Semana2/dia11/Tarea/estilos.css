@@ -181,6 +181,7 @@ button a {
   color: white;
   background: #3975EA;
   padding: 8px;
+  border: none;
 }
 
 .linkedin-icon i {
@@ -326,8 +327,8 @@ button a {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 20px;
-  width: 80%;
   margin: auto;
+  overflow: hidden;
 }
 
 .services:hover {
@@ -346,6 +347,7 @@ button a {
 /* ** Sección blog */
 .blog {
   margin-bottom: 72px;
+  overflow: hidden;
 }
 
 .news-section {
@@ -402,7 +404,6 @@ button a {
 
 .suscribe {
   font-size: 1.8rem;
-  height: 24px;
 }
 
 .suscribe form {
@@ -550,23 +551,21 @@ button a {
     align-items: center;
     background-color: #80e7ca;
     position: fixed;
+    width: 100%;
     left: 0px;
     top: 79px;
-    padding: 20px 0px;
-   /*  height: calc(100% - 79px);
-    overflow-y: auto; */
     left: 100%;
     transition: left 0.2s;
   }
 
   .contenedor{
-    padding: 109px 16px 16px 0px;
-    width: 100%;
+    padding: 109px 16px 0px 16px;
     justify-content: center;
   }
 
   .nav-page li {
-    padding: 20px;
+    padding: 48px;
+    gap: 8px;
   }
 
   .header a:hover, 
@@ -584,9 +583,16 @@ button a {
     margin: 0px;
   }
 
-  .aboute {
+  .about {
     width: 100%;
   }
+
+  .about button {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+
   .about-me figure{
     display: none;
   }
@@ -599,6 +605,11 @@ button a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .social-media {
+    margin: auto;
+    margin-bottom: 36px;
   }
 
   .portfolio {
@@ -647,6 +658,31 @@ button a {
 
   .footer .social-media {
     display: none;
+  }
+
+  .form-contact {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .form-contact div {
+    width: 100%;
+  }
+
+  .button-form {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-area h2 {
+    font-size: 18px;
+    padding: 24px;
+    margin-bottom: 0px;
+  }
+
+  .footer-area p {
+    margin: 16px;
   }
 }
 
