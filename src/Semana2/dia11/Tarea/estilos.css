@@ -299,10 +299,14 @@ button a {
   display: flex;
   justify-content: space-between;
   padding: 24px 0px 24px 24px;
+  position: relative;
+  height: 220px;
+  overflow: hidden;
 }
 
 .services i {
   color: white;
+  position: absolute;
 }
 
 .section-services {
@@ -318,8 +322,10 @@ button a {
   align-items: center;
   border-radius: 8px 0px 0px 8px;
   font-size: 2.4rem;
-  color: #5A0CB0;
   font-weight: 600;
+  color: #5A0CB0;
+  position: absolute;
+  right: 0px;
 }
 
 .list-services{
@@ -342,6 +348,38 @@ button a {
 
 .services:hover i {
   color: #580aaf;
+}
+
+.services:hover h3 {
+  animation-name: collapse-letter;
+  animation-duration: 0.5s;
+}
+
+.services:hover i {
+  animation-name: collapse-icon;
+  animation-duration: 0.5s;
+}
+
+@keyframes collapse-icon {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    left: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes collapse-letter {
+  from {
+    opacity: 0;
+    right: -50px;
+  } 
+  to {
+    right: 0px;
+    opacity: 1;
+  }
 }
 
 /* ** Sección blog */
