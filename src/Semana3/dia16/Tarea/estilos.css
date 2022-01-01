@@ -282,6 +282,17 @@ hr {
 .footer-content {
     padding: 40px 20px;
 }
+
+/* Footer down */
+.footer-down {
+    padding: 0px 0px 48px 20px; 
+}
+
+.footer-down p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.2rem;
+}
+/* Fin sección footer down */
 /* Fin sección footer */
 
 @media all and (min-width:520px) {
@@ -361,6 +372,10 @@ hr {
         grid-template-columns: 1fr 1fr;
         gap: 24px;
         padding: 48px 84px;
+    }
+
+    .footer-down {
+        padding: 0px 0px 48px 48px;
     }
 }
 

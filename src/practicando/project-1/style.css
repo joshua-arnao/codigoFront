@@ -1,0 +1,162 @@
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, .87);
+}
+
+.wrap {
+    position: relative;
+    top: 64px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.2rem;
+    margin: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin: 16px;
+}
+
+h4 {
+    font-size: 2.5rem;
+    margin: 16px;
+}
+
+
+/* ** Sección Header */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 16px;
+    background: #009688;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    font-size: 2.0rem;
+    height: 56px;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Fin sección Header */
+
+/* ** Fin Sección Banner Top */
+.banner-top img {
+    width: 100%;
+    height: 400px;
+}
+
+.menssage-principal {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+.banner-top {
+    position: relative;
+}
+
+.menssage-principal {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0px;
+    bottom: 0px;
+}
+/* Fin Sección Banner Top */
+
+
+.our-team {
+    text-align: center;
+}
+
+.picture-our {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0px;
+
+}
+
+.picture-our img {
+    width: 560px;
+    height: 250px;
+}
+
+.pride {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pride-cards {
+    padding: 12px;
+}
+
+.pride-cards figure {
+    padding: 16px;
+}
+.pride img {
+    border-radius: 80px;
+    border: 4px solid black;
+}
+
+
+h5 {
+    font-size: 2.0rem;
+    font-weight: 500;
+    padding: 16px;
+}
+
+.our-talent p {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+}
+
+.team-cards img {
+    border-radius: 110px;
+}
+
+.team-cards {
+    width: 100%;
+    padding: 8px;
+}
+
+.team-talent {
+    text-align: center;
+}
+
+.team-talent-cards {
+    display: flex;
+}
+
+.team-cards img {
+    border: 4px solid violet;
+}
+
+.team-cards figure {
+    padding: 4px;
+}
