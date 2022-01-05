@@ -225,6 +225,7 @@ hr {
     color: #fff;
     width: 50%;
     font-weight: 400;
+    font-size: 2.8rem;
     margin-bottom: 32px;
 }
 
@@ -296,10 +297,6 @@ hr {
 /* Fin sección footer */
 
 @media all and (min-width:520px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
     .cards-news {
         display: grid;
         grid-template-columns: 40% 58%;
@@ -376,6 +373,11 @@ hr {
 
     .footer-down {
         padding: 0px 0px 48px 84px;
+    }
+
+    .banner-footer h2 {
+        font-size: 3.8rem;
+        width: 70%;
     }
 }
 
