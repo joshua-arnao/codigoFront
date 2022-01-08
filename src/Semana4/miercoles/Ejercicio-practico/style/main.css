@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  background: gray;
+}
+
+.btn__primary {
+  background: blue;
+}
+
+.btn__secundary {
+  background: grey;
+}
+
+.btn__success {
+  background: green;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 16px;
+}
+.card__content {
+  padding: 16px;
+}
+.card__tittle {
+  margin: 0px;
+  font-size: 24px;
+}

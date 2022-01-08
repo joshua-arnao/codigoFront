@@ -1,0 +1,216 @@
+/* 
+================================ Globales ================================= 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* 
+================================ MENU ================================= 
+*/
+#menu {
+    top: 40px;
+}
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#all-container {
+    padding-top: 112px !important;
+}
+/* 
+================================ SLIDER DE IMAGENES ================================= 
+*/
+
+.carousel-inner {
+    max-height: 24rem;
+}
+
+.carousel-item img {
+    max-height: 24rem;
+}
+
+
+
+/*  */
+.img-thumbnail {
+    padding: 0 !important;
+    border-radius: 8px;
+}
+/*  */
+
+/* 
+================================ SECCIÓN NUESTRO EQUIPO MAPA================================= 
+*/
+
+.mapa {
+    background-image: url("https://guiauniversitaria.mx/wp-content/uploads/2020/02/Estas-son-las-5-nuevas-funciones-que-implemento%CC%81-Google-Maps.jpg");
+    width: 80%;
+    height: 500px;
+}
+
+#local {
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us {
+    width: 50%;
+    margin-left: 50px;
+    padding: 50px 50px 0px 50px;
+}
+
+
+/* 
+================================ SECCIÓN NUESTRO UBICANOS ================================= 
+*/
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin: 0px;
+}
+
+
+/* 
+================================ CONTACTO BG ================================= 
+*/
+#bg-contact {
+    position: relative;
+    top: -130px;
+}
+
+#section-contact {
+        background-color: #1b2a4e;
+        min-height: 500px;
+        position: relative;
+}
+
+
+/* 
+================================ FORMULARIO ================================= 
+*/
+
+#container-form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+#title-form {
+    color: #3f3f3f;
+}
+
+/* 
+================================ FORMULARIO ================================= 
+*/
+
+footer {
+    background-color: #1b2a4e;
+    min-height: 100px;
+}
+
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#icons i {
+    font-size: 24px;
+    padding: 0px 8px;
+    color: #f3f3f3;
+}
+
+ 
+/* 
+================================ MEDIA QUERIES PANTALLA ANCHA ================================= 
+*/
+@media(max-width: 1200px){
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .contact-us {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* 
+================================ MEDIA QUERIES PANTALLA SM ================================= 
+*/
+@media(max-width: 768px) {
+    #intro, #team {
+        width: 90% !important;
+    }
+
+    .service-file {
+        width: 100% !important;
+    }
+    
+    #picture-team {
+        width: 75% !important;
+    }
+
+    #team p {
+        display: none;
+    }
+
+    #bg-contact {
+        top: -90px;
+    }
+    
+}
+/* 
+================================ MEDIA QUERIES PANTALLA EXTRA SM ================================= 
+*/
+@media(max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .service-file {
+        text-align: center;
+    }
+}

@@ -1,0 +1,36 @@
+/* OOCCS */
+button {
+    border: none;
+    width: 214px;
+    height: 68px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.button-primary {
+    background-color: red;
+}
+
+.button-secundary {
+    background-color: blue;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+header {
+    background-color: red;
+    padding: 20px;
+}
+
+main {
+    background: green;
+    padding: 20px;
+}
+
+footer {
+    background: yellow;
+    padding: 20px;
+}

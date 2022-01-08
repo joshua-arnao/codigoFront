@@ -1,0 +1,80 @@
+@import "./global";
+@import "./medios";
+
+.logo {
+    width: 100px;
+    height: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-top:30px solid rgb(52, 53, 51);
+    width: 100%;
+}
+
+nav {
+    width: 80%;
+    margin: auto; 
+    @include box-flex(space-between, center, nowrap);
+
+    ul {
+        display: flex;
+
+        a {
+            padding: 10px;
+            font-size: 1.6rem;
+            font-weight: bold;
+
+            &:hover {
+                color: $color-principal;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.presentation {
+    padding: 100px 0px 50px 0px;
+
+    @include box-flex(space-between, center, nowrap);
+
+    &__image {
+        text-align: center;
+    }
+}
+
+.service {
+    background-color: $color-white;
+    padding: 50px 0px;
+    
+    &-content {
+        text-align: center;
+
+        &__title-service {
+            margin-bottom: 24px;
+        }
+
+        &__service-type {
+            @include box-flex(center, center, nowrap);
+
+            i {
+                font-size: 32px;
+                color: $color-principal;
+                margin: 24px;
+            }
+        }
+    }
+}
+
+
+footer {
+    min-height: 80px;
+    background: rgb(52, 53, 51);
+
+    .footer {
+        text-align: center;
+        padding-top: 30px;
+    }
+}

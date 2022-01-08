@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import "./resect";
+
+/* 
+Globales
+*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(134,132,132);
+}
+
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+.presentation,
+.service-content,
+.footer
+ {
+    margin-bottom: 24px;
+    width: 80%;
+    margin: auto;
+}
+
+.wrapper {
+    width: 100%;
+    background-image: url('./../../img/fondo.png');
+    
+}
+
+p {
+    font-size: $font-size-body;
+    color:rgb(134,132,132);
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: $font-size-title;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-principal {
+    @extend .btn;
+    color: $color-white;
+    background: $color-principal;
+}
+
+.btn-secundary {
+    @extend .btn;
+    color: $color-white;
+    background: $color-secundary;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}

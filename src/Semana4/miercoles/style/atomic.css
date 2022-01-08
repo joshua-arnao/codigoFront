@@ -1,0 +1,26 @@
+.button {
+  width: 213px;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: gray;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: red;
+}
+
+.button-secundary {
+  background-color: green;
+}
+
+.search {
+  border: 1px solid gray;
+  padding: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: gray;
+}
