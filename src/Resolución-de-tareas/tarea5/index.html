@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/page/home.css">
+    <script src="https://kit.fontawesome.com/3de167f6ac.js" crossorigin="anonymous"></script>
     <title>Proyecyto 5</title>
 </head>
 
@@ -16,7 +18,7 @@
             </a>
             <nav class="nav">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="" class="link-active">Home</a></li>
                     <li><a href="">Espectaculo</a></li>
                     <li><a href="">Deportes</a></li>
                 </ul>
@@ -25,24 +27,24 @@
         <main class="main">
             <section class="banner">
                 <img src="./img/Mask Group.png" alt="">
-                <div class="container">
+                <div class="banner__text">
                     <h1>Blog Afrianska</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br /> incididunt
+                        ut
+                        labore et dolore magna aliqua.<p>
                 </div>
             </section>
             <div class="container">
                 <form class="search">
                     <button>
                         <i class="fas fa-search"></i>
-                        <input type="search" placeholder="Search Article">
                     </button>
+                    <input type="search" placeholder="Search Article">
                 </form>
                 <section class="popular">
-                    <h2>POPULAR</h2>
-
+                    <h2 class="title-section">POPULAR</h2>
                     <article class="article popular__principal">
-                        <div class="popular__principal__left">
+                        <div class="article__text popular__principal__left">
                             <h2>Feugiat sodales at nullam tellus.</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque
@@ -71,7 +73,7 @@
                             <figure>
                                 <img src="./img/img-post-2.png" alt="Noticia 2">
                             </figure>
-                            <div class="article_text">
+                            <div class="article__text article_text">
                                 <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -109,7 +111,7 @@
                         </article>
                         <article class="article popular__article">
                             <figure>
-                                <img src="./img/img-post-4.png" alt="Noticia 4">
+                                <img src="./img/img-post-9.png" alt="Noticia 9">
                             </figure>
                             <div class="article_text">
                                 <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
@@ -132,26 +134,24 @@
                         <a href="">See All Popular Article</a>
                     </div>
                 </section>
-                <h2>All Artile</h2>
+                <h2 class="title-section">All Artile</h2>
                 <section class="all__articles">
                     <article class="article all__articles__article">
                         <figure>
                             <img src="./img/img-post-5.png" alt="Noticia 5">
                         </figure>
-                        <div class="article__rigth">
-                            <div class="article_text">
-                                <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                                <div class="article__info">
-                                    <div class="article__info__left">
-                                        <h3>Samatha Leuthex</h3>
-                                        <time>May 5, 3 min read</time>
-                                    </div>
-                                    <div class="article__info__right">
-                                        <a href=""><i class="fas fa-bookmark"></i></a>
-                                        <a href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
+                        <div class="article__text article__rigth">
+                            <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="article__info">
+                                <div class="article__info__left">
+                                    <h3>Samatha Leuthex</h3>
+                                    <time>May 5, 3 min read</time>
+                                </div>
+                                <div class="article__info__right">
+                                    <a href=""><i class="fas fa-bookmark"></i></a>
+                                    <a href=""><i class="fas fa-share-alt"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -160,20 +160,18 @@
                         <figure>
                             <img src="./img/img-post-6.png" alt="Noticia 6">
                         </figure>
-                        <div class="article__rigth">
-                            <div class="article_text">
-                                <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                                <div class="article__info">
-                                    <div class="article__info__left">
-                                        <h3>Samatha Leuthex</h3>
-                                        <time>May 5, 3 min read</time>
-                                    </div>
-                                    <div class="article__info__right">
-                                        <a href=""><i class="fas fa-bookmark"></i></a>
-                                        <a href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
+                        <div class="article__text article__rigth">
+                            <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="article__info">
+                                <div class="article__info__left">
+                                    <h3>Samatha Leuthex</h3>
+                                    <time>May 5, 3 min read</time>
+                                </div>
+                                <div class="article__info__right">
+                                    <a href=""><i class="fas fa-bookmark"></i></a>
+                                    <a href=""><i class="fas fa-share-alt"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -182,20 +180,41 @@
                         <figure>
                             <img src="./img/img-post-7.png" alt="Noticia 7">
                         </figure>
-                        <div class="article__rigth">
-                            <div class="article_text">
-                                <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                                <div class="article__info">
-                                    <div class="article__info__left">
-                                        <h3>Samatha Leuthex</h3>
-                                        <time>May 5, 3 min read</time>
-                                    </div>
-                                    <div class="article__info__right">
-                                        <a href=""><i class="fas fa-bookmark"></i></a>
-                                        <a href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
+
+                        <div class="article__text article__rigth">
+                            <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="article__info">
+                                <div class="article__info__left">
+                                    <h3>Samatha Leuthex</h3>
+                                    <time>May 5, 3 min read</time>
+                                </div>
+                                <div class="article__info__right">
+                                    <a href=""><i class="fas fa-bookmark"></i></a>
+                                    <a href=""><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="article all__articles__article">
+                        <figure>
+                            <img src="./img/img-post-8.png" alt="Noticia 8">
+                        </figure>
+
+                        <div class="article__text article__rigth">
+                            <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="article__info">
+                                <div class="article__info__left">
+                                    <h3>Samatha Leuthex</h3>
+                                    <time>May 5, 3 min read</time>
+                                </div>
+                                <div class="article__info__right">
+                                    <a href=""><i class="fas fa-bookmark"></i></a>
+                                    <a href=""><i class="fas fa-share-alt"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -204,67 +223,42 @@
                         <figure>
                             <img src="./img/img-post-8.png" alt="Noticia 8">
                         </figure>
-                        <div class="article__rigth">
-                            <div class="article_text">
-                                <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                                <div class="article__info">
-                                    <div class="article__info__left">
-                                        <h3>Samatha Leuthex</h3>
-                                        <time>May 5, 3 min read</time>
-                                    </div>
-                                    <div class="article__info__right">
-                                        <a href=""><i class="fas fa-bookmark"></i></a>
-                                        <a href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
+
+                        <div class="article__text article__rigth">
+                            <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="article__info">
+                                <div class="article__info__left">
+                                    <h3>Samatha Leuthex</h3>
+                                    <time>May 5, 3 min read</time>
+                                </div>
+                                <div class="article__info__right">
+                                    <a href=""><i class="fas fa-bookmark"></i></a>
+                                    <a href=""><i class="fas fa-share-alt"></i></a>
                                 </div>
                             </div>
-                        </div>
                     </article>
-                    <article class="article all__articles__article">
-                        <figure>
-                            <img src="./img/img-post-9.png" alt="Noticia 9">
-                        </figure>
-                        <div class="article__rigth">
-                            <div class="article_text">
-                                <h2>Porta proin tellus sed pulvinar odio eu pulvinar.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                                <div class="article__info">
-                                    <div class="article__info__left">
-                                        <h3>Samatha Leuthex</h3>
-                                        <time>May 5, 3 min read</time>
-                                    </div>
-                                    <div class="article__info__right">
-                                        <a href=""><i class="fas fa-bookmark"></i></a>
-                                        <a href=""><i class="fas fa-share-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <div class="all__articles__nav">
-                       <div class="all__articles__nav__left"">
-                        <button>
-                            <a href=""><i class="fas fa-arrow-left"></i><span>Old Post</span></a>
-                        </button>
-                       </div>
-                       <div class="all__articles__nav__right">
-                        <button>
-                            <a href=""><span>New Post</span><i class="fas fa-arrow-right"></i></a>
-                        </button>
-                       </div>
-                    </div>
                 </section>
+                <div class="all__articles__nav">
+                    <div class="all__articles__nav__left"">
+                        <a href="">
+                            <i class=" fas fa-arrow-left"></i>Old Post
+                        </a>
+                    </div>
+                    <div class="all__articles__nav__right">
+                        <a href=""><span>New Post</span><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="footer__top">
                 <div class="container">
                     <div class="footer__left">
                         <h2>Intersted to woek with our team?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                     <div class="footer__right">
                         <button>Let’s Talk</button>
@@ -272,45 +266,50 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <div class="footer__item">
-                    <ul>
-                        <li>
-                            <img src="./img/logo2.png" alt="Logo">
-                            <h2>Afrianska</h2>
-                        </li>
-                        <li>
-                            <span>A.</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </li>
-                        <li>
-                            <span>T.</span>
-                            <p>+62-812-7313-4321</p>
-                        </li>
-                        <li>
-                            <span>E.</span>
-                            <p>hello.afrian@gmail.com</p>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <div class="footer__flex">
+                        <div class="footer__item">
+                            <ul>
+                                <li class="footer__item__title">
+                                    <a href=""><img src="./img/logo2.png" alt="Logo"></a>
+                                    <h2>Afrianska</h2>
+                                </li>
+                                <li>
+                                    <span>A.</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </li>
+                                <li>
+                                    <span>T.</span>
+                                    <p>+62-812-7313-4321</p>
+                                </li>
+                                <li>
+                                    <span>E.</span>
+                                    <p>hello.afrian@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h2>About US</h2>
+                            <ul>
+                                <li><a href="">About</a></li>
+                                <li><a href="">What We Do</a></li>
+                                <li><a href="">Project</a></li>
+                                <li><a href="">How It Work With Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h2>Follow US</h2>
+                            <ul>
+                                <li>Instagram</li>
+                                <li>Facebook</li>
+                                <li>LinkedIn</li>
+                                <li>Youtube</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div><p class="footer__allright">2019 &copy; Afrianska. All rights reserved.</p></div>
                 </div>
-                <div class="footer__item">
-                    <h2>About US</h2>
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">What We Do</a></li>
-                        <li><a href="">Project</a></li>
-                        <li><a href="">How It Work With Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer__item">
-                    <h2>Follow US</h2>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>LinkedIn</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-                <p class="footer__Allright">2019 &copy; Afrianska. All rights reserved.</p>
             </div>
         </footer>
     </div>

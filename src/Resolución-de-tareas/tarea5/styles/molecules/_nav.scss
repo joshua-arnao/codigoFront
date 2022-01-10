@@ -1,0 +1,63 @@
+/* --------------------------------------------- */
+/* NAV */
+/* --------------------------------------------- */
+.nav {
+    ul {
+        display: flex;
+        font-size: 2.0rem;
+    }
+
+    li {
+        display: list-item;
+
+        a{
+            padding: 0.5rem 1rem;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 4px;
+                height: 4px;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                background-color: $color-primary;
+                border-radius: 100%;
+                transition: all 0.5s ease;
+                opacity: 0;
+            }
+
+            &:hover {
+                color: $color-primary;
+                
+                &::after {
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                }
+            }
+
+            &.link-active {
+                color: $color-secundary;
+                font-weight: 700;
+                cursor: default;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0px;
+                    width: 100%;
+                    height: 4px;
+                    background: $color-secundary;
+                    border-radius: 4px;
+                }
+            
+                &:hover {
+                    &::after {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

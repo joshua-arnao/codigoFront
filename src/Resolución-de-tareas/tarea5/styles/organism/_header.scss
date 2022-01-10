@@ -1,0 +1,7 @@
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+.header {
+    padding: 50px 30px;
+    @include d-flex (space-between, center, nowrap, none)
+}

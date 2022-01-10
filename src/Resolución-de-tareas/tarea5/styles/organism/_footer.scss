@@ -1,0 +1,82 @@
+/* --------------------------------------------- */
+/* .FOOTER TOP */
+/* --------------------------------------------- */
+.footer {
+    background: $color-success;
+    color: #fff;
+
+    &__top {
+        padding: 90px 0px;
+        border-bottom: 1px solid #fff;
+
+        h2 {
+            font-size: map-get($font-sizes, h2 );
+            line-height: 46px;
+        }
+
+        p {
+            line-height: 26px;
+            opacity: 0.6;
+        }
+
+        button {
+            background: #5A98D0;
+            color: #fff;
+            border: none;
+            padding: 16px 72px;
+        }
+        
+        .container {
+            @include d-flex(space-between, center, nowrap, none);
+        }
+    }
+
+    &__left,
+    &__right {
+        width: 50%;
+    }
+
+    &__right {
+        text-align: right;
+    }
+
+    /* --------------------------------------------- */
+    /* .FOOTER DOWN */
+    /* --------------------------------------------- */
+    &__bottom {
+        padding: 98px 0px 64px;
+
+        h2 {
+            font-size: 2.0rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            line-height: 48px
+        }
+    }
+
+    &__flex {
+        @include d-flex(space-between, none, none , none);
+        margin-bottom: 56px;
+    }
+
+    &__item {
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            h2{
+                font-weight: 700;
+                font-size: 2.8rem;
+                line-height: 30px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &__allright {
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,30 @@
+/* --------------------------------------------- */
+/* VARIABLES */
+/* --------------------------------------------- */
+
+/* 
+FONTS
+ */
+ $font-sizes: (
+    base: 62.5%,
+    body: 1.6rem,
+    p: 1.6rem,
+    h1: 4.4rem,
+    h2: 3.6rem,
+ );
+
+ $font-height: (
+     p: 26px,
+);
+
+ $font-family: (
+     global: arial,
+     title: Helvetica,
+ );
+
+ /* 
+ COLORS
+  */
+$color-primary: #356ead;
+$color-secundary: #1F3F68;
+$color-success: #316099;

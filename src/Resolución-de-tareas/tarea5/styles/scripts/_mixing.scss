@@ -1,0 +1,10 @@
+/* --------------------------------------------- */
+/* MIXING */
+/* --------------------------------------------- */
+@mixin d-flex ($position, $align, $wrap, $direction) {
+    display: flex;
+    justify-content: $position;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
