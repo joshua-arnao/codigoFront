@@ -74,7 +74,7 @@ console.log(
 console.log(
   (numeroUnoLogico > 5 && nombreLogico == "Sebastian") || hija == "johana"
 ); // true
-console.log(!(hija == "valentina"));
+console.log(!(hija == "valentina"));// la ! es simbolo de negación
 
 console.log(
   "KATYA".length > 4 && "KATYA" == "KATYA" && "KATYA".charAt(0) == "K"

@@ -1,11 +1,13 @@
+//Estructura de información
+
 /* 
-EJEMPLO UNO
+EJEMPLO UNO - 
 */
 function ejemploUno() {
     let nombre = 'Joshua';
     let nombres = ['Juan', 'Jorge', 'Omaira', 'Joshua'];
     let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    let anidados = ['Edificio uno', ['departamento 1', 'departamento 2']];
+    let anidados = ['Edificio uno', ['departamento 1', 'departamento 2', [0, 1, 2]]];
     let mezclados = [1, 'Joshua', true];
 
     //ACCESOS A INDICES DE ARRAYS
@@ -101,6 +103,7 @@ function ejemploDos() {
 
     celulares[0].marca = 'iphone modificado';
     console.log('celulares[0].marca', celulares[0].marca);
+    console.log(celulares[0])
 }
 
 ejemploDos()

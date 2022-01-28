@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Acordion</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="acordion__item">
+        <div class="acordion__header">
+            <h2>
+                <button class="js_button">
+                    Acordion Item #1
+                </button>
+            </h2>
+            <div class="acordion__icon">
+                <i class="fas fa-sort-up"></i>
+                <i class="fas fa-sort-down"></i>
+            </div>
+        </div>
+        <div class="collapseOne">
+            <div class="acordion__body">
+                <strong>This is my first acordion body.</strong> It is show by default
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .acordion__item{
+            width:100%;
+            background: #c4c4c4;
+        }
+        
+        .js_button{
+            width:100%;
+            height:100%;
+            background:none;
+            border: none;
+        }
+
+        .acordion__header {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .fa-sort-up {
+            display: none;
+        }
+
+        .collapseOne{
+            display: none;
+        }
+
+    </style>
+</body>
+</html>
